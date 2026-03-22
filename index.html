@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AbdCSS — Style Engine</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230c0c0e'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-weight='700' font-size='13' fill='%23e8ff47'>Abd</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">Abd<span>CSS</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#playground">Playground</a></li>
+      <li><a href="#playground" class="nav-cta">Try It</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Style Engine v1.0 — Now Live</div>
+      <h1 class="hero-title">
+        Write classes.<br>
+        <em class="accent-word">See</em> results.
+      </h1>
+      <p class="hero-sub">
+        Use predefined <code>chai-</code> utility classes or declare your own — paste HTML and watch it render live.
+      </p>
+      <div class="hero-btns">
+        <a href="#playground" class="btn-primary">Open Playground</a>
+        <a href="#about" class="btn-ghost">How it works</a>
+      </div>
+    </div>
+
+    <div class="hero-code-float">
+      <div class="code-dot-row">
+        <span class="code-dot dot-r"></span>
+        <span class="code-dot dot-y"></span>
+        <span class="code-dot dot-g"></span>
+      </div>
+      <div class="code-line"><span class="c-tag">&lt;div</span> <span class="c-attr">class</span><span class="c-op">=</span><span class="c-str">"chai-bg-black</span></div>
+      <div class="code-line"><span class="c-str">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chai-text-white chai-p-4"</span><span class="c-tag">&gt;</span></div>
+      <div class="code-line"><span class="c-muted">&nbsp;&nbsp;Hello, AbdCSS</span></div>
+      <div class="code-line"><span class="c-tag">&lt;/div&gt;</span></div>
+      <div class="code-divider"></div>
+      <div class="code-preview-label">renders as</div>
+      <div class="code-preview-box">Hello, AbdCSS</div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-bar">
+    <div class="stat"><span class="stat-num">0ms</span><span class="stat-label">Build time</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Custom rules</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Browser native</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">0</span><span class="stat-label">Dependencies</span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-inner">
+
+      <div class="about-left">
+        <div class="section-label">About</div>
+        <h2 class="section-title">Everything you need.<br><span class="muted-title">Nothing you don't.</span></h2>
+        <p class="about-desc">AbdCSS is a browser-native style engine. Define rules, write HTML, see it live. No config, no build step.</p>
+
+        <div class="steps-list">
+          <div class="step-item">
+            <span class="step-n">01</span>
+            <div class="step-body">
+              <h4>Use or create a class</h4>
+              <p>Start with built-in <code>chai-</code> utilities or define your own like <code>my-bg-dark</code>.</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <span class="step-n">02</span>
+            <div class="step-body">
+              <h4>Write HTML</h4>
+              <p>Type any valid HTML into the editor and apply class names directly on elements.</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <span class="step-n">03</span>
+            <div class="step-body">
+              <h4>See it live</h4>
+              <p>Preview updates instantly — every class applied, every style reflected.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-right">
+        <div class="feature-card feature-card--large">
+          <div class="feature-icon">⚡</div>
+          <h3>Live Rule Engine</h3>
+          <p>Add CSS utility rules on the fly. Name them, pick a property, set a value — instantly ready to use on any element.</p>
+          <div class="feature-tag">Real-time</div>
+        </div>
+        <div class="features-row">
+          <div class="feature-card">
+            <div class="feature-icon">🖊</div>
+            <h3>HTML Editor</h3>
+            <p>Write real HTML and watch it render live in the preview pane.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Live Preview</h3>
+            <p>All styles applied instantly as you type.</p>
+          </div>
+          <div class="feature-card feature-card--accent">
+            <div class="feature-icon">📦</div>
+            <h3>JSON Output</h3>
+            <p>Custom rules as clean JSON. Export-ready anytime.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🗑</div>
+            <h3>Clean Deletion</h3>
+            <p>Remove any rule by name. Keep your stylesheet lean.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PLAYGROUND -->
+  <section class="playground-section" id="playground">
+    <div class="section-label">App</div>
+    <h2 class="section-title">The Engine</h2>
+
+    <div class="engine-layout">
+
+      <!-- LEFT COLUMN -->
+      <div class="controls-col">
+
+        <div class="card">
+          <h2>Add Rule</h2>
+          <input type="text" id="name" placeholder="Class name (e.g. my-bg-dark)">
+          <select title="selector" id="property">
+            <option value="">Select Property</option>
+          </select>
+          <input type="text" id="value" placeholder="Value (e.g. #1a1a1a, 16px, bold)">
+          <button id="addBtn">Add Rule</button>
+        </div>
+
+        <div class="card">
+          <h2>Delete Rule</h2>
+          <input type="text" id="deleteName" placeholder="Class name to delete">
+          <button id="deleteBtn" class="btn-danger">Delete Rule</button>
+        </div>
+
+        <div class="card display">
+          <h2>Custom Rules</h2>
+          <div id="output">No custom rules yet.</div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="editor-col">
+        <div class="card editor-card">
+          <div class="editor-header">
+            <div class="editor-title-row">
+              <h2>HTML Editor</h2>
+              <span class="editor-arrow">→</span>
+              <span class="editor-notice">Enter valid HTML only</span>
+            </div>
+            <span class="editor-hint">Use <code>chai-</code> classes or your own</span>
+          </div>
+          <textarea id="htmlEditor" spellcheck="false" placeholder='<div class="chai-bg-black chai-text-white chai-p-4">
+  Hello, AbdCSS!
+</div>'></textarea>
+        </div>
+
+        <div class="card preview-card">
+          <div class="preview-header">
+            <h2>Live Preview</h2>
+            <span class="preview-badge">● Live</span>
+          </div>
+          <div id="playBox"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Abd<span>CSS</span></div>
+      <p class="footer-sub">Built for developers who think in utility classes.</p>
+      <p class="footer-copy">© 2025 AbdCSS. Crafted with intention.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
